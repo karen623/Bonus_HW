@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonus HW</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 2.3em;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .input-group {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .textarea-group {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .input-group label,
+    .textarea-group label {
+      width: 120px;
+      font-weight: 600;
+      color: #4a85bf;
+      margin-right: -50px;
+      font-size: 14px;
+    }
+
+    .textarea-group label {
+      margin-top: 12px;
+    }
+
+    .input-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .input-row .input-group {
+      width: calc(50% - 55px);
+    }
+
+    input[type="text"],
+    textarea {
+      flex: 1;
+      padding: 12px 15px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus {
+      border-color: #3498db;
+      box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+      outline: none;
+    }
+
+    textarea {
+      resize: none;
+      min-height: 100px;
+    }
+
+    .image-container {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 768px) {
+      .input-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .input-row .input-group {
+        width: 100%;
+      }
+      .container {
+        padding: 20px;
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bonus HW</h1>
+    <form>
+      <div class="input-group">
+        <label for="input1">Input 1</label>
+        <input type="text" id="input1" placeholder="Enter input 1">
+      </div>
+      <div class="input-row">
+        <div class="input-group">
+          <label for="input2">Input 2</label>
+          <input type="text" id="input2" placeholder="Enter input 2">
+        </div>
+        <div class="input-group">
+          <label for="input3">Input 3</label>
+          <input type="text" id="input3" placeholder="Enter input 3">
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="input4">Input 4</label>
+        <input type="text" id="input4" placeholder="Enter input 4">
+      </div>
+      <div class="textarea-group">
+        <label for="textarea">Textarea</label>
+        <textarea id="textarea" placeholder="Enter text here"></textarea>
+      </div>
+    </form>
+    <div class="image-container">
+      <img src="/Users/karenhuang/Desktop/IMG_2923.JPG" alt="">
+    </div>
+  </div>
+</body>
+</html>
